@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Word Counter</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content=" initial-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+            
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />        
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+
+
+
+<body>					       
+<p style="text-align: center; background-color: white"><u><b>Note:</b></u> Click Show Gallery for more Fun Project slideshow at the bottom of the page!</p>
+<button class="sg" onclick="countMSG()" style="text-align:center; background-color: white; color: navajowhite; border: 2px solid #4CAF50; /* Green */ width: 99%; background-blend-mode: soft-light; border-style: inset; border-radius: 4px;     padding: 16px 32px; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 4px 4px 4px; -webkit-transition-duration: 0.4s!important; /* Safari */ transition-duration: 0.4s; cursor: pointer;">Show Gallery</button>
+    
+<div id="wrapper">
+	<div class="jumbotron">
+		<div class="container">	
+	  		<div class="row"> 
+		        <div class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-8 col-md-offset-2">
+                     <div class="page-header"> 
+		        	<h1>Word Counter</h1>
+                         				</div>
+
+		       		 <div style="margin-right: 15px; margin-left: 15px;" class="form-horizontal" role="form">
+						<div class="form-group">
+						    <textarea rows="8" id="text" name="message" class="form-control" placeholder="Start Writing!"></textarea>
+						</div>
+			        </div>
+			        <div>
+                        <div class="buttons" style="text-align: center">
+						<button id="clear" class="btn btn-primary btn-block" type="submit" style="text-align: center">Clear</button>
+						<button id="count" class="btn btn-primary btn-block" type="submit" onclick="countMSG()" >Count</button>
+                            </div>
+						<h3 style="text-align: center">Words : <span id="wordcount">0</span>   </h3>
+						<h3 style="text-align: center">Characters ( includes spaces ) : <span id="charcount">0</span></h3>
+						<h3 style="text-align: center">Letters : <span id="lettercount">0</span></h3>
+					</div>
+                </div>
+		    </div>
+	  	</div>	
+	</div>
+
+
+<footer class="footer" id="footer">
+    <div class="navbar navbar-inverse custom navbar-static-bottom">
+      	<div  class="container">
+      		<div class="row">
+      			<div class="col-xs-12 col-sm-12  col-md-10 col-md-offset-1">
+      				<div style="margin-left: 15px; margin-right: 15px" class="row">
+	      				<div class="col-md-4">
+					        <p >Copyright &copy; Prashant Wankhede, All Rights Reserved.</p>
+
+
+					        <ul class="list-inline">
+					        	<li><a href="https://github.com/prashw"><img class="img-rounded" src="icons/github-sociocon.png" alt="github-profile"></a></li>
+					        	<li><a href="https://www.linkedin.com/in/prashaw"><img class="img-rounded" src="icons/icon-linkedin.png" alt="linkedin profile"></a></li>
+					        	<li><a href="mailto:prw19@pitt.edu"><img class="img-rounded" src="icons/email.png" alt="email prashant" style="padding-top: 0px;"></a></li>
+					        </ul>
+				        </div>
+				        <div class="col-md-4"></div>
+				        <div class="col-md-4">
+	      					<ul id="navigation-footer" class="list-inline">
+						        <li><a href="../" class="nav-link">Home&nbsp;&nbsp;&nbsp;&nbsp;&#9702;</a></li> 	
+						        <li><a href="../#projects" class="nav-link">Projects&nbsp;&nbsp;&nbsp;&nbsp;&#9702;</a></li> 
+						        <li><a href="../#contact" class="nav-link">Contact</a></li>
+						      </ul>
+                            <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" style="background-blend-mode: color">Submit</button>
+    </form>
+	      				</div>
+
+
+			        </div>
+		        </div>
+		    </div>    
+       </div>
+    </div>
+    <div class="w3c" style="text-align: center">
+        <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+  </p>
+    </div>
+  
+</footer>
+</div>
+
+<script>
+    function countMSG() {
+        var x = document.createElement("p");
+        var t = document.createTextNode("Stay Tuned! More coming soon...! )");
+        x.appendChild(t);
+        document.body.appendChild(x);
+}</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/count.js"></script>
+</body>
+</html>
